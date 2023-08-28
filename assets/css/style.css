@@ -1,0 +1,405 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html
+{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: brown;
+}
+
+#container
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+header
+{
+    box-sizing: border-box;
+    background-color:black;
+    margin: 1vh 1vh;
+}
+#nav_pages
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#nav_pages h1
+{
+    justify-content: flex-start;
+}
+#pages
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+#pages div
+{
+    width: 90px;
+    margin: 2vh 5vh;
+    text-decoration: none;
+}
+#pages div a
+{
+    text-decoration: none;
+    color: white;
+}
+#pages .page :hover
+{
+    color: #ecf39e;
+}
+#vertial_form 
+{
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 13vh 3vh 0vh;
+    font-size: xx-large;
+    display: flex;
+}
+#vertial_form img
+{
+    background-color: white;
+    border-radius: 100%;
+    margin: 20px;
+}
+#nav_buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+}
+#nav_buttons button
+{
+    width:10vh;
+    height:4vh;
+    margin: 1vh 3vh;
+    text-align: center;
+    padding: -12px 72px;
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid grey;
+}
+
+#nav_buttons button:hover
+{
+    background-color: #ecf39e;
+    color: black;
+}
+
+aside
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+    max-height: 480px;
+}
+#aside
+{
+    display: flex;
+    flex-direction: row;
+}
+#aside_image
+{
+    align-self: flex-end;
+}
+#aside_image img
+{
+    height: 50vh;
+    border-radius: 20px;
+}
+#titles
+{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 80px;
+    line-height: 60px;
+}
+#special_title
+{
+    transition: 1s;
+}
+#special_title:hover
+{
+    background-color: #ecf39e;
+    border-radius: 10px;
+    color: black;
+}
+
+#content
+{
+    margin: 10px 80px 10px 80px;
+    line-height: 25px;
+    width: 100%;
+    max-width: 780px;
+}
+
+#content_buttons
+{
+    display: flex;
+    margin: 10px 80px 10px 80px;
+}
+#content_buttons button
+{
+    margin: 10px;
+    width: 120px;
+    height: 40px;
+    padding: -12px 72px;
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid rgb(192, 189, 189);
+}
+
+#content_buttons button:hover
+{
+    background-color: #ecf39e;
+    color:black;
+}
+
+#steps
+{
+    box-sizing: border-box;
+    display: flex;
+    width: 90%;
+    background-color:black;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 120px;
+    color: black;
+
+}
+
+#step1
+{
+    width: 40%;
+    background-color:#e0f2c0;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#step2
+{
+    width: 35%;
+    background-color: #eff790;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#step3
+{
+    width: 25%;
+    background-color:white;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.no
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color:black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+#no1
+{
+    background-color:white;
+    color: black;
+}
+
+.nested_content
+{
+    margin: 10px 0px 2px 20px ;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+} 
+.nested_content h1
+{
+    align-self: flex-start;
+}
+
+footer
+{
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 14vh;
+    height:100%;
+    align-items: flex-end;
+    margin-top: 140px;
+    background-color: aqua;
+}
+
+#container_footer
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-height: 14vh;
+    align-items: center;
+    padding: 2vh;
+    background-color:white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+#start_button
+{
+    height: 4vh;
+    width: 16vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#nested_button
+{
+    margin: 2vh;
+    width: 5vh;
+    height: 3vh;
+    text-align: center;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color:black;
+}
+
+#footer_content
+{
+    font-weight: 100;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+#stacked_buttons
+{
+    width: 20vh;
+    height: 4vh;
+    display: flex;
+    background-color: aquamarine;
+}
+
+#stacked_buttons button
+{
+    width: 10vh;
+    height: 4vh;
+    border-radius: 20px;
+}
+
+#but1
+{
+    background-color: #e0f2c0;
+}
+
+#but2
+{
+    background-color: rgb(252, 209, 252);
+}
+
+#but3
+{
+    background-color: rgb(255, 228, 179);
+}
+
+#contact
+{
+    width: 14vh;
+    height: 4vh;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+    transition: 0.75s;
+}
+#contact:hover
+{
+    background-color: #eff790;
+}
